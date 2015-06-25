@@ -1,0 +1,32 @@
+$mq-1: 675px !default;
+$mq-2: 1000px !default;
+$mq-3: 1350px !default;
+
+
+// Both portrait and landscape
+@mixin small-only {
+    @media (max-width : $mq-1) {
+        @content;
+    }
+}
+
+
+
+@mixin medium-only {
+    @media only screen and (min-width : $mq-1 + 1) and (max-width : $mq-2) {
+        @content;
+    }
+}
+
+
+@mixin large-only {
+    @media only screen and (min-width : $mq-2 + 1) and (max-width : $mq-3) {
+        @content;
+    }
+}
+
+@mixin large-and-above {
+    @media only screen and (min-width : $mq-3 + 1) {
+        @content;
+    }
+}

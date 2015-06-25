@@ -1,0 +1,67 @@
+/* keep plus from wrapping to next line */
+
+.nav-breadcrumb-toggle {
+	position: absolute;
+	right: 10px;
+	top: -7px;
+	/*outline: 1px solid #CC3333;  this is so we can SEE the space it's taking up, not a design element, although it could be */
+	width: 36px;
+	height: 36px;
+	text-align:center; /* making the toggle sit in the center of the space */
+	line-height: 36px;
+}
+
+.nav-breadcrumb-parent {
+	position: relative;
+}
+
+/* direct selector */
+.nav-breadcrumb-child > ul > li {
+	line-height: 25px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* make the levels look different than child items */
+.nav-breadcrumb-parent {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content-nav {
+	background-color: #ccc;
+}
+
+.content-nav a {
+	display: block;
+}
+
+/* make the levels look different from one another */
+.nav-breadcrumb-level {
+	padding: 10px 20px;
+}
+
+.nav-breadcrumb-level-1 {
+	padding-left: 2px;
+	background-color:#666666;
+}
+
+.nav-breadcrumb-level-2 {
+	padding-left: 12px;
+	background-color:#999999;
+}
+
+.nav-breadcrumb-level-3 {
+	padding-left: 22px;
+	background-color:#CCCCCC;
+}
+
+
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+
+@media (max-width: 900px) {
+	
+	.content-nav {
+		display: none;
+	}
+
+}

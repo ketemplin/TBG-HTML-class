@@ -1,0 +1,113 @@
+
+
+
+.nav-utility {
+	position: absolute;
+	top: 35px;
+	right: 400px;
+
+		li {
+			display: inline-block;
+			padding-right: 20px;
+		}
+
+		.nav-utility-items-special {
+			color: red;
+		}
+	
+}
+
+/* LOGIN AREA START */
+
+.header-login {
+	position: absolute;
+	top: 27px;
+	right: 300px;
+
+		a {
+			display:block;
+			height: 30px;
+			width: 100px;
+			background-color: gray;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		label {
+			display: block;
+			padding-top: 10px;
+			color: white;
+		}
+
+		input {
+			margin-bottom: 10px;
+			width: 200px;
+		}
+
+		button {
+			width: 200px;
+			margin-top: 10px;
+		}
+
+}
+
+.header-login-form {
+	position: absolute;
+	left: -150px;
+	background-color: gray;
+	width: 250px;
+
+}
+
+.header-login-form-fields {
+	width: 200px;
+	padding-left: 25px;
+	padding-top: 15px;
+	height: 200px;
+		
+	}
+
+.submit-button {
+		
+	}
+
+/* END LOGIN */
+
+/*BEGIN SEARCH */
+
+.form {
+
+	font-family: ariel;
+	
+
+}
+
+input [type="text"] {
+	display: block;
+}
+
+input [type="radio"] {
+
+	display: inline-block;
+}
+
+
+.header-search {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+
+		.header-search-label {
+		display: none;
+		}
+
+}
+
+.header-search-input {
+
+		&[placeholder] {
+		color:green;
+		}
+}
+

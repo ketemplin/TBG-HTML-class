@@ -1,0 +1,39 @@
+.tile-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  max-width: 1200px;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.tile img {
+	max-width: 200px;
+  max-height: 300px;
+  display: block;
+}
+
+.tile {
+  -webkit-flex-direction: row; /* Safari */
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+span.tileheader {
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
+}
+
+
+/* Media Query */
+
+@media (min-width: 900px) {
+
+  .tile {
+    width: 25%;
+  }
+
+}

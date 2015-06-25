@@ -1,0 +1,158 @@
+.nav-primary {
+	position: relative;
+	z-index: 10;
+	max-width: 100%;
+	height: 50px;
+	background: gray;
+		ul {
+			margin-bottom: 0;
+		}
+}
+
+
+.nav-primary-parent-item {
+		width: 20%;
+		position: absolute;
+
+		&.nav-primary-parent-item-1 {
+			left: 0%;
+			/*background-color: #E60000;*/
+			background: linear-gradient(#E60000, #EB3333, #E60000);
+		}
+
+		&.nav-primary-parent-item-2 {
+			left: 20%;
+			/*background-color: #FF6600;*/
+			background: linear-gradient(#FF6600, #FF8533, #FF6600);
+		}
+
+		&.nav-primary-parent-item-3 {
+			left: 40%;
+			/*background-color: #006699;*/
+			background: linear-gradient(#006699, #3385AD, #006699);
+		}
+
+		&.nav-primary-parent-item-4 {
+			left: 60%;
+			/*background-color: #CC0099;*/
+			background: linear-gradient(#CC0099, #D633AD, #CC0099);
+		}
+
+		&.nav-primary-parent-item-5 {
+			left: 80%;
+			/*background-color: #009999; */
+			background: linear-gradient(#009999, #33ADAD, #009999);
+		}
+
+}
+
+
+
+.nav-primary-level1-link {
+	display: block;
+	text-align: center;
+	height: 50px;
+	padding-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.nav-primary-flyout {
+	width: 547px;
+	a {
+		color: white;
+	}
+}
+
+.nav-primary-flyout-1 {
+	background-color: #EB3333;
+}
+		
+.nav-primary-flyout-2 {
+	background-color: #FF8533;
+}
+		
+.nav-primary-flyout-3 {
+	background-color: #3385AD;
+}
+		
+.nav-primary-flyout-4 {
+	background-color: #D633AD;
+}
+
+.nav-primary-flyout-5 {
+	background-color: #33ADAD;
+	margin-left: -100%;
+
+}
+
+.nav-primary-level2-col1 {
+	width: 50%;
+	line-height: 30px;
+	display: inline-block;
+	padding-left: 20px;
+	border-right: 1px solid white;
+		
+}
+
+.nav-primary-level2-col2 {
+	max-width: 50%;
+	line-height: 30px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* MEDIA QUERIES for RESPONSIVE */
+
+@media (min-width: 901px) {
+	
+	.nav-wrap {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.nav-primary-flyout {
+		position: absolute;
+		bottom: 50px;
+	}
+
+/* this span.nav-breadcrumb-toggle targets the toggles in the main nav, not the left nav - both use that style */
+	span.nav-breadcrumb-toggle {
+		display: none;
+	}
+
+}
+
+@media (max-width: 900px) {
+	.nav-primary {
+		height: auto;
+	}
+	.nav-primary-flyout {
+	width: 100%;
+	}
+
+	.nav-primary-parent-item {
+		position: relative;
+		width: auto;
+		left: 0 !important;
+	}
+
+	.nav-primary-flyout-5 {
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 547px) {
+	.nav-primary-level2-col1 {
+		display: block;
+		border-right: none;
+	}
+	.nav-primary-level2-col2 {
+		display: block;
+	}
+}

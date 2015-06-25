@@ -1,0 +1,835 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 17, ../../scss/ia/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../scss/ia/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../../scss/ia/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../../scss/ia/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../../scss/ia/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../scss/ia/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../../scss/ia/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ======  Base styles - Some starting defaults with low specificity. ====== */
+/* Import @font-face rules here */
+/* Set all elements to use border-box by default. Use "inherit" for better specificity */
+/* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* line 10, ../../scss/ia/_base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 15, ../../scss/ia/_base.scss */
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* * {
+outline: 1px solid red;
+
+} */
+/* line 25, ../../scss/ia/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 29, ../../scss/ia/_base.scss */
+html, button, input, select, textarea {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 35, ../../scss/ia/_base.scss */
+::-moz-selection {
+  background: #B3D4FC;
+  text-shadow: none;
+}
+
+/* line 39, ../../scss/ia/_base.scss */
+::selection {
+  background: #B3D4FC;
+  text-shadow: none;
+}
+
+/* line 44, ../../scss/ia/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, ../../scss/ia/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 54, ../../scss/ia/_base.scss */
+input[type="submit"], input[type="search"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* line 59, ../../scss/ia/_base.scss */
+[type="button"] {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 68, ../../scss/ia/_base.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 72, ../../scss/ia/_base.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 76, ../../scss/ia/_base.scss */
+a {
+  text-decoration: none;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+}
+
+/* line 81, ../../scss/ia/_base.scss */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 100, ../../scss/ia/_base.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 105, ../../scss/ia/_base.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 1, ../../scss/ia/_layout.scss */
+.l-contain {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Max Width of page */
+/* line 9, ../../scss/ia/_layout.scss */
+.l-wrapper {
+  max-width: 100%;
+}
+
+/* 1 Column Layout */
+/* line 15, ../../scss/ia/_layout.scss */
+.l-1-col-master .l-content-primary {
+  width: 100%;
+}
+
+/* 2 Column Layout */
+/* line 25, ../../scss/ia/_layout.scss */
+.l-2-col-master .l-content-primary {
+  width: 70%;
+  float: left;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+/* line 32, ../../scss/ia/_layout.scss */
+.l-2-col-master .content-nav {
+  width: 30%;
+  float: left;
+}
+
+/* 3 Column Layout */
+/* line 44, ../../scss/ia/_layout.scss */
+.l-3-col-master .l-content-primary {
+  width: 45%;
+  float: left;
+}
+
+/* line 49, ../../scss/ia/_layout.scss */
+.l-3-col-master .content-nav {
+  width: 30%;
+  float: left;
+}
+
+/* line 54, ../../scss/ia/_layout.scss */
+.l-3-col-master .content-secondary {
+  width: 25%;
+  float: left;
+}
+
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+@media (max-width: 900px) {
+  /* line 64, ../../scss/ia/_layout.scss */
+  .l-2-col-master .l-content-primary {
+    width: auto;
+  }
+}
+/* ======  Typography / RTF Styles ====== */
+/* To prevent overwriting issues, we have very few tag-only styles. */
+/* Instead, we define a class that can be extended */
+/* line 6, ../../scss/ia/_typography.scss */
+body {
+  font-size: 14px;
+}
+
+/* Anchor Styles */
+/* line 13, ../../scss/ia/_typography.scss */
+a {
+  cursor: pointer;
+}
+
+/* RTF Image Styles */
+/*.rtf figure,
+.figure {
+    figcaption {}
+    &.l-float-l {}
+    &.l-float-r {}
+}*/
+/* Header Styles */
+/* line 34, ../../scss/ia/_typography.scss */
+.h1, h1 {
+  font-size: 36px;
+  font-family: sans-serif;
+}
+
+/* line 38, ../../scss/ia/_typography.scss */
+.h2, h2 {
+  font-size: 28 px;
+  font-family: sans-serif;
+}
+
+/* line 42, ../../scss/ia/_typography.scss */
+.h3, h3 {
+  font-size: 20 px;
+  font-family: sans-serif;
+}
+
+/* line 46, ../../scss/ia/_typography.scss */
+.h4, h4 {
+  font-size: 18 px;
+  font-family: sans-serif;
+}
+
+/* line 52, ../../scss/ia/_typography.scss */
+.h5, h5 {
+  font-size: 16 px;
+  font-family: sans-serif;
+}
+
+/* Body Copy Style */
+/* line 60, ../../scss/ia/_typography.scss */
+.p, p {
+  font-family: serif;
+}
+
+/* line 64, ../../scss/ia/_typography.scss */
+.ul, ul,
+.ol, ol {
+  margin-bottom: 0.5em;
+  font-family: serif;
+}
+
+/* Link with a right-pointing single arrow quote */
+/* line 74, ../../scss/ia/_typography.scss */
+.link-arrow:after {
+  content: '\00a0\203A';
+}
+
+/* Link with a right-pointing double arrow quote */
+/* line 81, ../../scss/ia/_typography.scss */
+.link-arrows:after {
+  content: '\00a0\00bb';
+}
+
+/* for child list in nav */
+/* line 2, ../../scss/ia/_utility.scss */
+.is-collapsed {
+  display: none;
+}
+
+/* for toggle, plus and minus sign in nav */
+/* line 7, ../../scss/ia/_utility.scss */
+.is-open {
+  display: block;
+}
+
+/* line 12, ../../scss/ia/_utility.scss */
+.is-closed {
+  display: none;
+}
+
+/* line 1, ../../scss/ia/_nav-primary.scss */
+.nav-primary {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  height: 50px;
+  background: gray;
+}
+/* line 7, ../../scss/ia/_nav-primary.scss */
+.nav-primary ul {
+  margin-bottom: 0;
+}
+
+/* line 13, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item {
+  width: 20%;
+  position: absolute;
+}
+/* line 17, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item.nav-primary-parent-item-1 {
+  left: 0%;
+  /*background-color: #E60000;*/
+  background: linear-gradient(#e60000, #eb3333, #e60000);
+}
+/* line 23, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item.nav-primary-parent-item-2 {
+  left: 20%;
+  /*background-color: #FF6600;*/
+  background: linear-gradient(#ff6600, #ff8533, #ff6600);
+}
+/* line 29, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item.nav-primary-parent-item-3 {
+  left: 40%;
+  /*background-color: #006699;*/
+  background: linear-gradient(#006699, #3385ad, #006699);
+}
+/* line 35, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item.nav-primary-parent-item-4 {
+  left: 60%;
+  /*background-color: #CC0099;*/
+  background: linear-gradient(#cc0099, #d633ad, #cc0099);
+}
+/* line 41, ../../scss/ia/_nav-primary.scss */
+.nav-primary-parent-item.nav-primary-parent-item-5 {
+  left: 80%;
+  /*background-color: #009999; */
+  background: linear-gradient(#009999, #33adad, #009999);
+}
+
+/* line 51, ../../scss/ia/_nav-primary.scss */
+.nav-primary-level1-link {
+  display: block;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 61, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout {
+  width: 547px;
+}
+/* line 63, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout a {
+  color: white;
+}
+
+/* line 68, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout-1 {
+  background-color: #EB3333;
+}
+
+/* line 72, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout-2 {
+  background-color: #FF8533;
+}
+
+/* line 76, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout-3 {
+  background-color: #3385AD;
+}
+
+/* line 80, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout-4 {
+  background-color: #D633AD;
+}
+
+/* line 84, ../../scss/ia/_nav-primary.scss */
+.nav-primary-flyout-5 {
+  background-color: #33ADAD;
+  margin-left: -100%;
+}
+
+/* line 90, ../../scss/ia/_nav-primary.scss */
+.nav-primary-level2-col1 {
+  width: 50%;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 20px;
+  border-right: 1px solid white;
+}
+
+/* line 99, ../../scss/ia/_nav-primary.scss */
+.nav-primary-level2-col2 {
+  max-width: 50%;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* MEDIA QUERIES for RESPONSIVE */
+@media (min-width: 901px) {
+  /* line 111, ../../scss/ia/_nav-primary.scss */
+  .nav-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* line 118, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-flyout {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  /* this span.nav-breadcrumb-toggle targets the toggles in the main nav, not the left nav - both use that style */
+  /* line 124, ../../scss/ia/_nav-primary.scss */
+  span.nav-breadcrumb-toggle {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  /* line 131, ../../scss/ia/_nav-primary.scss */
+  .nav-primary {
+    height: auto;
+  }
+
+  /* line 134, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-flyout {
+    width: 100%;
+  }
+
+  /* line 138, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-parent-item {
+    position: relative;
+    width: auto;
+    left: 0 !important;
+  }
+
+  /* line 144, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-flyout-5 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 547px) {
+  /* line 151, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-level2-col1 {
+    display: block;
+    border-right: none;
+  }
+
+  /* line 155, ../../scss/ia/_nav-primary.scss */
+  .nav-primary-level2-col2 {
+    display: block;
+  }
+}
+/* keep plus from wrapping to next line */
+/* line 3, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-toggle {
+  position: absolute;
+  right: 10px;
+  top: -7px;
+  /*outline: 1px solid #CC3333;  this is so we can SEE the space it's taking up, not a design element, although it could be */
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  /* making the toggle sit in the center of the space */
+  line-height: 36px;
+}
+
+/* line 14, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-parent {
+  position: relative;
+}
+
+/* direct selector */
+/* line 19, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-child > ul > li {
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* make the levels look different than child items */
+/* line 25, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-parent {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 30, ../../scss/ia/_nav-secondary.scss */
+.content-nav {
+  background-color: #ccc;
+}
+
+/* line 34, ../../scss/ia/_nav-secondary.scss */
+.content-nav a {
+  display: block;
+}
+
+/* make the levels look different from one another */
+/* line 39, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-level {
+  padding: 10px 20px;
+}
+
+/* line 43, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-level-1 {
+  padding-left: 2px;
+  background-color: #666666;
+}
+
+/* line 48, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-level-2 {
+  padding-left: 12px;
+  background-color: #999999;
+}
+
+/* line 53, ../../scss/ia/_nav-secondary.scss */
+.nav-breadcrumb-level-3 {
+  padding-left: 22px;
+  background-color: #CCCCCC;
+}
+
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+@media (max-width: 900px) {
+  /* line 63, ../../scss/ia/_nav-secondary.scss */
+  .content-nav {
+    display: none;
+  }
+}
+/* line 4, ../../scss/ia/_nav-utility.scss */
+.nav-utility {
+  position: absolute;
+  top: 35px;
+  right: 400px;
+}
+/* line 9, ../../scss/ia/_nav-utility.scss */
+.nav-utility li {
+  display: inline-block;
+  padding-right: 20px;
+}
+/* line 14, ../../scss/ia/_nav-utility.scss */
+.nav-utility .nav-utility-items-special {
+  color: red;
+}
+
+/* LOGIN AREA START */
+/* line 22, ../../scss/ia/_nav-utility.scss */
+.header-login {
+  position: absolute;
+  top: 27px;
+  right: 300px;
+}
+/* line 27, ../../scss/ia/_nav-utility.scss */
+.header-login a {
+  display: block;
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 37, ../../scss/ia/_nav-utility.scss */
+.header-login label {
+  display: block;
+  padding-top: 10px;
+  color: white;
+}
+/* line 43, ../../scss/ia/_nav-utility.scss */
+.header-login input {
+  margin-bottom: 10px;
+  width: 200px;
+}
+/* line 48, ../../scss/ia/_nav-utility.scss */
+.header-login button {
+  width: 200px;
+  margin-top: 10px;
+}
+
+/* line 55, ../../scss/ia/_nav-utility.scss */
+.header-login-form {
+  position: absolute;
+  left: -150px;
+  background-color: gray;
+  width: 250px;
+}
+
+/* line 63, ../../scss/ia/_nav-utility.scss */
+.header-login-form-fields {
+  width: 200px;
+  padding-left: 25px;
+  padding-top: 15px;
+  height: 200px;
+}
+
+/* END LOGIN */
+/*BEGIN SEARCH */
+/* line 79, ../../scss/ia/_nav-utility.scss */
+.header-search {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+/* line 84, ../../scss/ia/_nav-utility.scss */
+.header-search .header-search-label {
+  display: none;
+}
+
+/* line 92, ../../scss/ia/_nav-utility.scss */
+.header-search-input[placeholder] {
+  color: green;
+}
+
+/* END SEARCH */
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+@media (max-width: 900px) {
+  /* line 103, ../../scss/ia/_nav-utility.scss */
+  .nav-utility {
+    display: none;
+  }
+}
+/* line 1, ../../scss/ia/_header.scss */
+.l-header {
+  position: relative;
+  height: 100px;
+}
+
+/* line 7, ../../scss/ia/_header.scss */
+.header-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+}
+
+/* line 16, ../../scss/ia/_header.scss */
+.header-utility {
+  position: relative;
+}
+
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+@media (max-width: 900px) {
+  /* line 26, ../../scss/ia/_header.scss */
+  .header-search-input {
+    display: none;
+  }
+}
+/* line 1, ../../scss/ia/_tiles.scss */
+.tile-container {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  max-width: 1200px;
+  -webkit-flex-wrap: wrap;
+  /* Safari */
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+/* line 11, ../../scss/ia/_tiles.scss */
+.tile img {
+  max-width: 200px;
+  max-height: 300px;
+  display: block;
+}
+
+/* line 17, ../../scss/ia/_tiles.scss */
+.tile {
+  -webkit-flex-direction: row;
+  /* Safari */
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+/* line 24, ../../scss/ia/_tiles.scss */
+span.tileheader {
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Media Query */
+@media (min-width: 900px) {
+  /* line 35, ../../scss/ia/_tiles.scss */
+  .tile {
+    width: 25%;
+  }
+}
+/* line 4, ../../scss/ia/_forms.scss */
+.nav-utility {
+  position: absolute;
+  top: 35px;
+  right: 400px;
+}
+/* line 9, ../../scss/ia/_forms.scss */
+.nav-utility li {
+  display: inline-block;
+  padding-right: 20px;
+}
+/* line 14, ../../scss/ia/_forms.scss */
+.nav-utility .nav-utility-items-special {
+  color: red;
+}
+
+/* LOGIN AREA START */
+/* line 22, ../../scss/ia/_forms.scss */
+.header-login {
+  position: absolute;
+  top: 27px;
+  right: 300px;
+}
+/* line 27, ../../scss/ia/_forms.scss */
+.header-login a {
+  display: block;
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 37, ../../scss/ia/_forms.scss */
+.header-login label {
+  display: block;
+  padding-top: 10px;
+  color: white;
+}
+/* line 43, ../../scss/ia/_forms.scss */
+.header-login input {
+  margin-bottom: 10px;
+  width: 200px;
+}
+/* line 48, ../../scss/ia/_forms.scss */
+.header-login button {
+  width: 200px;
+  margin-top: 10px;
+}
+
+/* line 55, ../../scss/ia/_forms.scss */
+.header-login-form {
+  position: absolute;
+  left: -150px;
+  background-color: gray;
+  width: 250px;
+}
+
+/* line 63, ../../scss/ia/_forms.scss */
+.header-login-form-fields {
+  width: 200px;
+  padding-left: 25px;
+  padding-top: 15px;
+  height: 200px;
+}
+
+/* END LOGIN */
+/*BEGIN SEARCH */
+/* line 79, ../../scss/ia/_forms.scss */
+.form {
+  font-family: ariel;
+}
+
+/* line 86, ../../scss/ia/_forms.scss */
+input [type="text"] {
+  display: block;
+}
+
+/* line 90, ../../scss/ia/_forms.scss */
+input [type="radio"] {
+  display: inline-block;
+}
+
+/* line 96, ../../scss/ia/_forms.scss */
+.header-search {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+/* line 101, ../../scss/ia/_forms.scss */
+.header-search .header-search-label {
+  display: none;
+}
+
+/* line 109, ../../scss/ia/_forms.scss */
+.header-search-input[placeholder] {
+  color: green;
+}

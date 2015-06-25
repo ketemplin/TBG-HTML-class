@@ -1,0 +1,19 @@
+@mixin width($context, $target) {
+  width: percentage($target / $context); }
+
+@mixin margin-top($context, $top) {
+  margin-top: percentage($top / $context); }
+
+@mixin margin-right($context, $right) {
+  margin-right: percentage($right / $context); }
+
+@mixin margin-bottom($context, $bottom) {
+  margin-bottom: percentage($bottom / $context); }
+
+@mixin margin-left($context, $left) {
+  margin-left: percentage($left / $context); }
+
+
+
+
+

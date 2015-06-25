@@ -1,0 +1,83 @@
+/* ======  Typography / RTF Styles ====== */
+
+/* To prevent overwriting issues, we have very few tag-only styles. */
+/* Instead, we define a class that can be extended */
+
+body {
+    font-size: 14px;
+}
+
+
+/* Anchor Styles */
+
+a {
+    cursor: pointer;
+}
+.a,
+.rtf a {
+    
+}
+
+
+/* RTF Image Styles */
+
+/*.rtf figure,
+.figure {
+    figcaption {}
+    &.l-float-l {}
+    &.l-float-r {}
+}*/
+
+
+/* Header Styles */
+
+.h1, h1 {
+	font-size: 36px;
+	font-family: sans-serif;
+}
+.h2, h2 {
+	font-size: 28 px;
+	font-family: sans-serif;
+}
+.h3, h3 {
+	font-size: 20 px;
+	font-family: sans-serif;
+}
+.h4, h4 {
+	font-size: 18 px;
+	font-family: sans-serif;
+}
+
+
+.h5, h5 {
+	font-size: 16 px;
+	font-family: sans-serif;
+}
+
+
+/* Body Copy Style */
+
+.p, p {
+	font-family: serif;
+}
+.ul, ul,
+.ol, ol {
+    margin-bottom: 0.5em;
+	font-family: serif;
+}
+
+.ol, .rtf ol {}
+
+
+/* Link with a right-pointing single arrow quote */
+
+.link-arrow:after {
+    content: '\00a0\203A';
+}
+
+
+/* Link with a right-pointing double arrow quote */
+
+.link-arrows:after {
+    content: '\00a0\00bb';
+}

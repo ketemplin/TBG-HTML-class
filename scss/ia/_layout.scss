@@ -1,0 +1,67 @@
+.l-contain {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+
+/* Max Width of page */
+.l-wrapper {
+	max-width: 100%;
+}
+
+/* 1 Column Layout */
+
+.l-1-col-master .l-content-primary {
+	width: 100%;
+}
+
+
+
+
+
+
+/* 2 Column Layout */
+.l-2-col-master .l-content-primary {
+	width: 70%;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.l-2-col-master .content-nav {
+	width: 30%;
+	float: left;
+}
+
+
+
+
+
+
+
+/* 3 Column Layout */
+.l-3-col-master .l-content-primary{
+	width: 45%;
+	float: left;
+}
+
+.l-3-col-master .content-nav {
+	width: 30%;
+	float: left;
+}
+
+.l-3-col-master .content-secondary {
+	width: 25%;
+	float: left;
+}
+
+
+/* MEDIA QUERY - MAKING IT RESPONSIVE */
+
+@media (max-width: 900px) {
+
+	.l-2-col-master .l-content-primary {
+		width: auto;
+	}
+}
